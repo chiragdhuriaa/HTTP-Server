@@ -2,7 +2,7 @@
 
 About This Project
 
-Welcome to the Multithreaded HTTP Server! This project is a lightweight, multithreaded HTTP server built in C++ using the Windows Sockets (WinSock) API. It showcases fundamental concepts of networking, file handling, multithreading, and request-response mechanics for HTTP/1.1.
+This project is a lightweight, multithreaded HTTP server built in C++ using the Windows Sockets (WinSock) API. It showcases fundamental concepts of networking, file handling, multithreading, and request-response mechanics for HTTP/1.1.
 Features
 
     1. Multithreaded Client Handling
