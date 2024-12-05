@@ -7,12 +7,16 @@ Features
 
     1. Multithreaded Client Handling
     Handles multiple clients simultaneously using separate threads, ensuring responsiveness.
+    
     2. Rate Limiting
     Implements a basic rate-limiting mechanism to prevent request floods from the same IP.
+    
     3. File Serving
     Serves static HTML content, such as index.html. If the file is not found, returns a 404 Not Found response.
+    
     4. Logging
     Logs every client request to a file (server.log), including timestamps, client IP, request details, and response codes.
+    
     5. Error Responses
     Sends appropriate HTTP error responses, including 404 Not Found and 429 Too Many Requests.
 
@@ -27,10 +31,13 @@ How It Works
 
     1. Start the Server
     The server listens on port 8080 for incoming client connections.
+    
     2. Client Connection
     Each client request is processed in its own thread to allow concurrent handling.
+    
     3. Rate Limiting
     A map tracks the timestamps of the last request from each client IP. If a client sends another request within 1 second, they receive a 429 Too Many Requests response.
+    
     4. Serving Files
     The server attempts to serve an index.html file. If the file is missing, a 404 Not Found response is sent.
 
@@ -38,8 +45,10 @@ How to Use
 
     1. Compile and Run
     Compile the program using a C++ compiler that supports WinSock2 and threading (e.g., MSVC). Run the executable on a Windows machine.
+    
     2. Access the Server
     Open a web browser or use a tool like curl to access http://<server-ip>:8080. Ensure the index.html file is present in the same directory as the executable.
+    
     3. Check Logs
     View the server.log file to see details of client requests and responses.
 
